@@ -1,25 +1,21 @@
-# Title
+# Tutorial: Uso de condicionales IF
 
-## Step 1
+## Paso 1: Condicional simple
+En este paso aprenderás a usar un bloque `if`.  
+Este bloque ejecuta una acción **solo si** la condición es verdadera.
 
-This is step1
+```blocks
+if (player.isOnGround()) {
+    player.say("Estoy en el suelo")
+}
+```
 
-agent.move(FORWARD, 5)
-agent.turn(LEFT)
-agent.place(FORWARD)
+## Paso 2: Condicional con comparación
+Ahora vamos a usar un `if` que compara un número.  
+Si el número de bloques colocados es mayor que 5, mostramos un mensaje.
 
-## Step 2
-
-This is step1
-
-## Step 3
-
-This is step1
-
-## Step 4
-
-This is step1
-
-## Step 5
-
-This is step1
+```blocks
+if (blocksPlaced > 5) {
+    player.say("Has colocado más de 5 bloques")
+}
+```
